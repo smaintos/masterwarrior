@@ -102,7 +102,7 @@ class Knight(Character):
         print("⚔️ Bonus: Charging attack (+2 attack)")
         return super().compute_damages(roll, target)
 
-def create_team_player():
+def teamplayer():
     team_player = []
     for i in range(4):
         name = input(f"Enter the name for character {i+1}: ")
@@ -126,7 +126,7 @@ def create_team_player():
             team_player.append(Warrior(name))
     return team_player
 
-def create_team_enemy():
+def teamenemy():
     team_enemy = []
     for i in range(4):
         name = f"Enemy {i+1}"
@@ -160,9 +160,9 @@ def press_space_to_continue():
     input("Press [SPACE] to continue...")
 
 if __name__ == "__main__":
-    print("Welcome to the Arena!")
-    player_team = create_team_player()
-    enemy_team = create_team_enemy()
+    print("Welcome to Arena ! \n")
+    player_team = teamplayer()
+    enemy_team = teamenemy()
 
     print("\nYour team:")
     for character in player_team:
