@@ -1,18 +1,18 @@
 from __future__ import annotations
-
 from team import teamplayer, teamenemy
 from utils import press_enter_to_continue
 from character import Character, Warrior, Mage, Thief, Knight
-from message_manager import MessageManager
+from message_manager import MessageManager  # Import the MessageManager class
 import random
+
+def choose_target_preference():
+    choice = input("Do you want to choose the target of your attacks? (y/n): ")
+    return choice.lower() == 'y'
 
 if __name__ == "__main__":
     print("Welcome to Master Warrior ! \n")
     player_team = teamplayer()
-
-    # Create a list of random enemy classes
-    enemy_classes = [Warrior, Mage, Thief, Knight]
-    enemy_team = [random.choice(enemy_classes)(f"Enemy {i+1}") for i in range(len(player_team))]
+    enemy_team = teamenemy()
 
     print("\nYour team:")
     for character in player_team:
@@ -21,6 +21,9 @@ if __name__ == "__main__":
     print("\nEnemy team:")
     for character in enemy_team:
         print(character)
+
+    # Ajout de l'étape pour choisir la préférence du joueur avant le combat
+    select_target_preference = choose_target_preference()
 
     order_of_play = player_team + enemy_team
     order_of_play.sort(key=lambda x: x.get_speed(), reverse=True)
@@ -34,8 +37,8 @@ if __name__ == "__main__":
             if any(c.is_alive() for c in target_team):
                 print(f"\nCurrent character: {character}")
 
-                choice = input("Do you want to choose the class of the target? (y/n): ")
-                if choice.lower() == 'y':
+                # Utilisation de la variable select_target_preference pour déterminer si le joueur choisit la cible
+                if select_target_preference:
                     print("\nChoose the class for target:")
                     print("1. Warrior (Tanky, +3 attack)")
                     print("2. Mage (Defensive, +3 defense)")
@@ -67,4 +70,4 @@ if __name__ == "__main__":
             MessageManager.show_victory_message()
             break
 
-        press_enter_to_continue()
+    press_enter_to_continue()
