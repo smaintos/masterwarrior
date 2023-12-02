@@ -13,20 +13,22 @@ def teamplayer():
         choice = input("Enter the number of your choice: ")
         
         if choice == "1":
-            team_player.append(Warrior(name))
+            character = Warrior(name)
         elif choice == "2":
-            team_player.append(Mage(name))
+            character = Mage(name)
         elif choice == "3":
-            team_player.append(Thief(name))
+            character = Thief(name)
         elif choice == "4":
-            team_player.append(Knight(name))
+            character = Knight(name)
         else:
             print("Invalid choice. Defaulting to Warrior.")
-            team_player.append(Warrior(name))
+            character = Warrior(name)
+
+        character.regenerate()  # Régénère les HP
+        team_player.append(character)
             
     for character in team_player:
         character._speed = character._dice.roll()
-        character.regenerate()  # Ajout de cette ligne pour régénérer les HP
     team_player.sort(key=lambda x: x.get_speed(), reverse=True)
     
     return team_player
