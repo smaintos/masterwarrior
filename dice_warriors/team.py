@@ -1,4 +1,5 @@
 from character import Warrior, Mage, Thief, Knight
+import random
 
 def teamplayer():
     team_player = []
@@ -32,25 +33,31 @@ def teamplayer():
 def teamenemy():
     team_enemy = []
     for i in range(4):
-        name = f"Enemy {i+1}"
-        print(f"\nChoose the class for {name}:")
-        print("1. Warrior (Tanky, +3 attack)")
-        print("2. Mage (Defensive, +3 defense)")
-        print("3. Thief (Agile, ignores defense)")
-        print("4. Knight (Balanced, +2 speed)")
-        choice = input("Enter the number of your choice: ")
+        name = f"Enemy {i + 1}"
+        
+        # Ajoutez cette vérification pour permettre au joueur de choisir la classe de l'adversaire
+        choice = input(f"Do you want to choose the class for {name}? (y/n): ")
+        if choice.lower() == 'y':
+            print("\nChoose the class for character:")
+            print("1. Warrior (Tanky, +3 attack)")
+            print("2. Mage (Defensive, +3 defense)")
+            print("3. Thief (Agile, ignores defense)")
+            print("4. Knight (Balanced, +2 speed)")
+            class_choice = input("Enter the number of your choice: ")
 
-        if choice == "1":
-            team_enemy.append(Warrior(name))
-        elif choice == "2":
-            team_enemy.append(Mage(name))
-        elif choice == "3":
-            team_enemy.append(Thief(name))
-        elif choice == "4":
-            team_enemy.append(Knight(name))
+            if class_choice == "1":
+                team_enemy.append(Warrior(name))
+            elif class_choice == "2":
+                team_enemy.append(Mage(name))
+            elif class_choice == "3":
+                team_enemy.append(Thief(name))
+            elif class_choice == "4":
+                team_enemy.append(Knight(name))
+            else:
+                print("Invalid choice. Defaulting to Warrior.")
+                team_enemy.append(Warrior(name))
         else:
-            print("Invalid choice. Defaulting to Warrior.")
-            team_enemy.append(Warrior(name))
+            team_enemy.append(random.choice([Warrior(name), Mage(name), Thief(name), Knight(name)]))
 
     for character in team_enemy:
         character._speed = character._dice.roll()

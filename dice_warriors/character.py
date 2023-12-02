@@ -3,8 +3,6 @@ print("\n")
 
 from dice import Dice
 
-
-
 class MessageManager():
     pass
 
@@ -69,6 +67,7 @@ class Character:
         wounds = self.compute_defense(damages, roll, attacker)
         print(f"🛡️ {self._name} takes {wounds} wounds from {attacker.get_name()} (damages: {damages} - defense: {self._defense_value} - roll: {roll})")
         self.decrease_health(wounds)
+        
 
 class Warrior(Character):
     def __init__(self, name: str):
@@ -96,9 +95,23 @@ class Thief(Character):
 
 class Knight(Character):
     def __init__(self, name: str):
-        super().__init__(name, max_hp=20, attack=2, defense=2, speed=2, dice=Dice(6))
+        super().__init__(name, max_hp=20, attack=8, defense=2, speed=2, dice=Dice(6))
 
     def compute_damages(self, roll, target: Character):
         print("⚔️ Bonus: Charging attack (+2 attack)")
         return super().compute_damages(roll, target)
 
+def compute_damages(self, roll: int, target: Character) -> int:
+    base_damages = self.get_attack_value() + roll
+    if target is not None:
+        print(f"💥 {self.get_name()} attacks {target.get_name()}!")
+
+        if isinstance(target, Thief):
+            print("🔪 Bonus: Sneaky attack (+3 damages)")
+            return base_damages + 3
+        else:
+            print("💢 Standard attack")
+            return base_damages
+    else:
+        print(f"💨 {self.get_name()} attacks but misses! No target selected.")
+        return 0
