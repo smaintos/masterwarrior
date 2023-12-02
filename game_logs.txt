@@ -270,3 +270,55 @@
 [2023-12-03 00:36:46] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥] 21/20hp
 [2023-12-03 00:36:46] Enemy 4 attacks 1 with 14 damages (attack: 8 + roll: 3)
 [2023-12-03 00:36:46] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:46:05] 2 attacks Enemy 2 with 9 damages (attack: 8 + roll: 1)
+[2023-12-03 00:46:05] Enemy 2: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡] 14/20hp
+[2023-12-03 00:54:01] 2 attacks Enemy 4 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:01] Enemy 4: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:54:17] Enemy 4 attacks 2 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:54:17] 2: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:54:20] 3 attacks Enemy 4 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:54:20] Enemy 4: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:54:23] 4 attacks Enemy 4 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:23] Enemy 4: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:54:24] Enemy 1 attacks 2 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:54:24] 2: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:54:26] Enemy 2 attacks 2 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:26] 2: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:54:27] 1 attacks Enemy 4 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:27] Enemy 4: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:54:29] Enemy 3 attacks 2 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:54:29] 2: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:54:29] Enemy 1 attacks 3 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:29] 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:54:29] Enemy 2 attacks 1 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:29] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:54:29] Enemy 3 attacks 3 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:29] 3: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:54:35] 3 attacks Enemy 1 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:54:35] Enemy 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:54:37] 4 attacks Enemy 1 with 9 damages (attack: 8 + roll: 1)
+[2023-12-03 00:54:37] Enemy 1: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:54:47] Enemy 1 attacks 3 with 13 damages (attack: 8 + roll: 5)
+[2023-12-03 00:54:47] 3: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:54:49] Enemy 2 attacks 3 with 9 damages (attack: 8 + roll: 1)
+[2023-12-03 00:54:49] 3: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:54:53] 1 attacks Enemy 1 with 14 damages (attack: 8 + roll: 6)
+[2023-12-03 00:54:53] Enemy 1: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:55:37] Enemy 3 attacks 4 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:55:37] 4: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:55:37] Enemy 1 attacks 1 with 14 damages (attack: 8 + roll: 6)
+[2023-12-03 00:55:37] 1: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:55:37] Enemy 2 attacks 4 with 9 damages (attack: 8 + roll: 1)
+[2023-12-03 00:55:37] 4: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:55:37] Enemy 3 attacks 4 with 13 damages (attack: 8 + roll: 5)
+[2023-12-03 00:55:37] 4: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:55:38] 4 attacks Enemy 2 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:55:38] Enemy 2: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:55:39] Enemy 1 attacks 4 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:55:39] 4: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:55:43] Enemy 2 attacks 1 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:55:43] 1: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:55:44] 1 attacks Enemy 3 with 11 damages (attack: 8 + roll: 3)
+[2023-12-03 00:55:44] Enemy 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:55:45] Enemy 3 attacks 1 with 14 damages (attack: 8 + roll: 6)
+[2023-12-03 00:55:45] 1: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp

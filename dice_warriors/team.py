@@ -4,14 +4,15 @@ import random
 def teamplayer():
     team_player = []
     for i in range(4):
-        name = input(f"Enter the name for character {i+1}: ")
+        name = input(f"Enter the name for character {i + 1}: ")
         print("\nChoose the class for character:")
         print("1. Warrior (Tanky, +3 attack)")
         print("2. Mage (Defensive, +3 defense)")
         print("3. Thief (Agile, ignores defense)")
         print("4. Knight (Balanced, +2 speed)")
         choice = input("Enter the number of your choice: ")
-        
+
+        # Utilisation de la classe correcte en fonction du choix
         if choice == "1":
             character = Warrior(name)
         elif choice == "2":
@@ -26,19 +27,20 @@ def teamplayer():
 
         character.regenerate()  # Régénère les HP
         team_player.append(character)
-            
+
+    # Ajustez le calcul de la vitesse pour chaque personnage
     for character in team_player:
         character._speed = character._dice.roll()
     team_player.sort(key=lambda x: x.get_speed(), reverse=True)
-    
+
     return team_player
 
 def teamenemy():
     team_enemy = []
     for i in range(4):
         name = f"Enemy {i + 1}"
-        
-        # Ajoutez cette vérification pour permettre au joueur de choisir la classe de l'adversaire
+
+        # Demandez au joueur s'il souhaite choisir la classe de l'ennemi
         choice = input(f"Do you want to choose the class for {name}? (y/n): ")
         if choice.lower() == 'y':
             print("\nChoose the class for character:")
@@ -48,6 +50,7 @@ def teamenemy():
             print("4. Knight (Balanced, +2 speed)")
             class_choice = input("Enter the number of your choice: ")
 
+            # Utilisation de la classe correcte en fonction du choix
             if class_choice == "1":
                 team_enemy.append(Warrior(name))
             elif class_choice == "2":
@@ -62,8 +65,10 @@ def teamenemy():
         else:
             team_enemy.append(random.choice([Warrior(name), Mage(name), Thief(name), Knight(name)]))
 
+    # Ajustez le calcul de la vitesse pour chaque ennemi
     for character in team_enemy:
         character._speed = character._dice.roll()
     team_enemy.sort(key=lambda x: x.get_speed(), reverse=True)
 
     return team_enemy
+

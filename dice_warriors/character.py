@@ -94,36 +94,36 @@ class Warrior(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
-    def compute_damages(self, roll, target: Character):
+    def compute_bonus_attack(self, target: Character):
         print("🪓 Bonus: Axe in your face (+3 attack)")
-        return super().compute_damages(roll, target) + 3
+        return 3
 
 
 class Mage(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
-    def compute_defense(self, damages, roll, attacker: Character):
+    def compute_bonus_attack(self, target: Character):
         print("🧙 Bonus: Magic armor (-3 damages)")
-        return super().compute_defense(damages, roll, attacker) - 3
+        return -3
 
 
 class Thief(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
-    def compute_damages(self, roll, target: Character):
+    def compute_bonus_attack(self, target: Character):
         print(f"🔪 Bonus: Sneaky attack (+{target.get_defense_value()} damages)")
-        return super().compute_damages(roll, target) + target.get_defense_value()
+        return target.get_defense_value()
 
 
 class Knight(Character):
     def __init__(self, name: str):
-        super().__init__(name, max_hp=20, attack=2, defense=2, speed=2, dice=Dice(6))
+        super().__init__(name, max_hp=20, attack=8, defense=3, speed=2, dice=Dice(6))
 
-    def compute_damages(self, roll, target: Character):
+    def compute_bonus_attack(self, target: Character):
         print("⚔️ Bonus: Charging attack (+2 attack)")
-        return super().compute_damages(roll, target)
+        return 2
     
 def compute_damages(self, roll: int, target: Character) -> int:
     base_damages = self.get_attack_value() + roll

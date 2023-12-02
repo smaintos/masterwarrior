@@ -31,7 +31,7 @@ def choose_target_preference():
     return choice.lower() == 'y'
 
 if __name__ == "__main__":
-    print("Welcome to Master Warrior ! \n")
+    print("Welcome to Master Warrior!\n")
     player_team = teamplayer()
     enemy_team = teamenemy()
 
@@ -47,31 +47,36 @@ if __name__ == "__main__":
 
     print("\nLet the battle begin!\n")
 
-    while any(character.is_alive() for character in player_team):
-        for character in player_team:
-            target_team = enemy_team
+    while any(character.is_alive() for character in order_of_play):
+        for character in order_of_play:
+            if character.is_alive():
+                target_team = enemy_team if isinstance(character, Character) and character in player_team else player_team
 
-            print(f"\nCurrent character: {character}")
-        
-        # Utilisation de la variable select_target_preference pour déterminer si le joueur choisit la cible
-        if select_target_preference:
-            print("\nChoose the target:")
-            target = choose_target(target_team)
-            
-            # Vérifiez si la cible est vivante avant d'attaquer
-            if not target.is_alive():
-                print(f"{target.get_name()} is already defeated. Choose another target.")
-                continue
-        else:
-            target = random.choice([c for c in target_team if c.is_alive()])
+                print(f"\nCurrent character: {character}")
 
-        character.attack(target)
+                # Utilisation de la variable select_target_preference pour déterminer si le joueur choisit la cible
+                if select_target_preference:
+                    print("\nChoose the target:")
+                    target = choose_target(target_team)
+
+                    # Vérifiez si la cible est vivante avant d'attaquer
+                    if not target.is_alive():
+                        print(f"{target.get_name()} is already defeated. Choose another target.")
+                        continue
+                else:
+                    target = random.choice([c for c in target_team if c.is_alive()])
+
+                character.attack(target)
+
+        if not any(character.is_alive() for character in player_team):
+            MessageManager.show_defeat_message()
+            break
 
         if not any(character.is_alive() for character in enemy_team):
             MessageManager.show_victory_message()
             break
 
-    # Laissez les ennemis attaquer automatiquement après que le joueur ait terminé ses attaques
+        # Laissez les ennemis attaquer automatiquement après que le joueur ait terminé ses attaques
         for enemy in enemy_team:
             target_team = player_team
             alive_targets = [t for t in target_team if t.is_alive()]
@@ -79,11 +84,5 @@ if __name__ == "__main__":
             if alive_targets:
                 target = random.choice(alive_targets)
                 enemy.attack(target)
-
-        if not any(character.is_alive() for character in player_team):
-            MessageManager.show_defeat_message()
-            break
-
-
 
     press_enter_to_continue()
