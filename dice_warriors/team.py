@@ -26,6 +26,7 @@ def teamplayer():
             
     for character in team_player:
         character._speed = character._dice.roll()
+        character.regenerate()  # Ajout de cette ligne pour régénérer les HP
     team_player.sort(key=lambda x: x.get_speed(), reverse=True)
     
     return team_player

@@ -53,8 +53,12 @@ class Character:
         print(message)
         self.message_manager.log_message(message)
 
+    def show_enemy_info(self):
+        healthbar = f"[{'♥' * self._current_hp}{'♡' * (self._max_hp - self._current_hp)}] {self._current_hp}/{self._max_hp}hp"
+        print(f"{self._name}: {healthbar}")
+    
     def regenerate(self):
-        self._current_hp = self._max_hp
+        self._current_hp = min(self._max_hp, 20)
 
     def decrease_health(self, amount):
         self._current_hp -= amount

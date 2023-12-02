@@ -182,3 +182,91 @@
 [2023-12-02 23:59:32] Enemy 3: [♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡] 7/20hp
 [2023-12-02 23:59:32] 3 attacks Enemy 3 with 14 damages (attack: 8 + roll: 3)
 [2023-12-02 23:59:32] Enemy 3: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:21:39] 4 attacks Enemy 3 with 4 damages (attack: 2 + roll: 2)
+[2023-12-03 00:21:39] Enemy 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥] 24/20hp
+[2023-12-03 00:21:43] 1 attacks Enemy 3 with 16 damages (attack: 8 + roll: 5)
+[2023-12-03 00:21:43] Enemy 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡] 19/20hp
+[2023-12-03 00:21:44] Enemy 3 attacks 4 with 9 damages (attack: 8 + roll: 1)
+[2023-12-03 00:21:44] 4: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡] 14/20hp
+[2023-12-03 00:21:45] Enemy 4 attacks 4 with 12 damages (attack: 8 + roll: 1)
+[2023-12-03 00:21:45] 4: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:21:46] 3 attacks Enemy 3 with 17 damages (attack: 8 + roll: 6)
+[2023-12-03 00:21:46] Enemy 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡] 14/20hp
+[2023-12-03 00:22:21] 2 attacks Enemy 3 with 9 damages (attack: 8 + roll: 1)
+[2023-12-03 00:22:21] Enemy 3: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:22:24] Enemy 1 attacks 4 with 11 damages (attack: 8 + roll: 1)
+[2023-12-03 00:22:24] 4: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:22:27] Enemy 2 attacks 3 with 17 damages (attack: 8 + roll: 6)
+[2023-12-03 00:22:27] 3: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:25:54] 1 attacks Enemy 4 with 13 damages (attack: 8 + roll: 2)
+[2023-12-03 00:25:54] Enemy 4: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:25:55] 1 attacks Enemy 4 with 12 damages (attack: 8 + roll: 1)
+[2023-12-03 00:25:55] Enemy 4: [♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 4/20hp
+[2023-12-03 00:25:56] 1 attacks Enemy 4 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:25:56] Enemy 4: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:25:57] Enemy 3 attacks 1 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:25:57] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:26:03] 1 attacks Enemy 3 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:26:03] Enemy 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:29:04] 1 attacks Enemy 1 with 15 damages (attack: 8 + roll: 4)
+[2023-12-03 00:29:04] Enemy 1: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:29:05] Enemy 1 attacks 1 with 13 damages (attack: 8 + roll: 2)
+[2023-12-03 00:29:05] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:29:05] Enemy 4 attacks 1 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:29:05] 1: [♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡] 7/20hp
+[2023-12-03 00:29:06] Enemy 3 attacks 1 with 12 damages (attack: 8 + roll: 1)
+[2023-12-03 00:29:06] 1: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:29:52] 1 attacks Enemy 1 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:29:52] Enemy 1: [♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 4/20hp
+[2023-12-03 00:29:58] Enemy 2 attacks 1 with 11 damages (attack: 8 + roll: 3)
+[2023-12-03 00:29:58] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:30:06] 1 attacks Enemy 4 with 17 damages (attack: 8 + roll: 6)
+[2023-12-03 00:30:06] Enemy 4: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:30:10] 1 attacks Enemy 1 with 12 damages (attack: 8 + roll: 1)
+[2023-12-03 00:30:10] Enemy 1: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:30:19] Enemy 4 attacks 1 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:30:19] 1: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:30:21] Enemy 3 attacks 1 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:30:21] 1: [♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 2/20hp
+[2023-12-03 00:30:22] 1 attacks Enemy 4 with 17 damages (attack: 8 + roll: 6)
+[2023-12-03 00:30:22] Enemy 4: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:30:26] Enemy 2 attacks 1 with 10 damages (attack: 8 + roll: 2)
+[2023-12-03 00:30:26] 1: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:30:31] 1 attacks Enemy 4 with 16 damages (attack: 8 + roll: 5)
+[2023-12-03 00:30:31] Enemy 4: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:30:32] 1 attacks Enemy 4 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:30:32] Enemy 4: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:30:48] Enemy 3 attacks 1 with 13 damages (attack: 8 + roll: 2)
+[2023-12-03 00:30:48] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:30:57] Enemy 2 attacks 1 with 12 damages (attack: 8 + roll: 4)
+[2023-12-03 00:30:57] 1: [♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡] 7/20hp
+[2023-12-03 00:30:57] 1 attacks Enemy 3 with 13 damages (attack: 8 + roll: 2)
+[2023-12-03 00:30:57] Enemy 3: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:31:01] 1 attacks Enemy 3 with 16 damages (attack: 8 + roll: 5)
+[2023-12-03 00:31:01] Enemy 3: [♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 4/20hp
+[2023-12-03 00:31:07] Enemy 3 attacks 1 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:31:07] 1: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:31:13] Enemy 2 attacks 1 with 14 damages (attack: 8 + roll: 6)
+[2023-12-03 00:31:13] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:31:19] 1 attacks Enemy 3 with 13 damages (attack: 8 + roll: 2)
+[2023-12-03 00:31:19] Enemy 3: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:31:31] Enemy 2 attacks 1 with 11 damages (attack: 8 + roll: 3)
+[2023-12-03 00:31:31] 1: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:31:33] 1 attacks Enemy 2 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:31:33] Enemy 2: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 00:31:37] Enemy 2 attacks 1 with 13 damages (attack: 8 + roll: 5)
+[2023-12-03 00:31:37] 1: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 00:31:49] 1 attacks Enemy 2 with 15 damages (attack: 8 + roll: 4)
+[2023-12-03 00:31:49] Enemy 2: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 00:31:53] Enemy 2 attacks 1 with 11 damages (attack: 8 + roll: 3)
+[2023-12-03 00:31:53] 1: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 00:36:46] 1 attacks Enemy 2 with 13 damages (attack: 8 + roll: 2)
+[2023-12-03 00:36:46] Enemy 2: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:36:46] Enemy 2 attacks 1 with 15 damages (attack: 8 + roll: 4)
+[2023-12-03 00:36:46] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:36:46] Enemy 1 attacks 1 with 17 damages (attack: 8 + roll: 6)
+[2023-12-03 00:36:46] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 00:36:46] Enemy 3 attacks 1 with 8 damages (attack: 2 + roll: 6)
+[2023-12-03 00:36:46] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥] 21/20hp
+[2023-12-03 00:36:46] Enemy 4 attacks 1 with 14 damages (attack: 8 + roll: 3)
+[2023-12-03 00:36:46] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
