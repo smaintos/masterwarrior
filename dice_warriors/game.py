@@ -102,7 +102,6 @@ while any(character.is_alive() for character in order_of_play):
 
             if not any(c.is_alive() for c in enemy_team):
                 MessageManager.show_victory_message()
-                console.print("\n[bold green]Félicitations ! Vous avez gagné ![/bold green]")
                 press_enter_to_continue()
                 exit()
                 break
@@ -114,7 +113,6 @@ while any(character.is_alive() for character in order_of_play):
 
                 if not any(c.is_alive() for c in player_team):
                     MessageManager.show_defeat_message()
-                    console.print("\n[bold red]Game Over! Votre équipe a été vaincue.[/bold red]")
                     press_enter_to_continue()
                     exit()
                     break
