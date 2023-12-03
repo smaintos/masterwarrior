@@ -102,34 +102,21 @@ class Warrior(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
-    def compute_bonus_attack(self, target: Character):
-        bonus_message = "🪓 Bonus: Hache dans ta tronche ! (+3 attack)"
-        console.print(bonus_message, style="success", justify="center")
-        return 3
+
 
 class Mage(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
-    def compute_bonus_attack(self, target: Character):
-        bonus_message = "🧙 Bonus: Armure magique ! (-3 damages)"
-        console.print(bonus_message, style="warning", justify="center")
-        return -3
+
 
 class Thief(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
-    def compute_bonus_attack(self, target: Character):
-        bonus_message = f"🔪 Bonus: Attaque furtif ! (+{target.get_defense_value()} dégâts)"
-        console.print(bonus_message, style="success", justify="center")
-        return target.get_defense_value()
+
 
 class Knight(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=2, dice=Dice(6))
 
-    def compute_bonus_attack(self, target: Character):
-        bonus_message = "⚔️ Bonus: Attaque charger ! (+2 attack)"
-        console.print(bonus_message, style="success", justify="center")
-        return 2
