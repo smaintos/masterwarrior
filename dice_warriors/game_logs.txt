@@ -1,0 +1,60 @@
+[2023-12-03 23:52:13] 3 attaque  Ennemi 2 avec 10 dégâts (attaque : 8 + jet de dé: 2)
+[2023-12-03 23:52:13] Ennemi 2: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡] 14/20hp
+[2023-12-03 23:52:13] 1 attaque  Ennemi 1 avec 9 dégâts (attaque : 8 + jet de dé: 1)
+[2023-12-03 23:52:13] Ennemi 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡] 18/20hp
+[2023-12-03 23:52:13] 4 attaque  Ennemi 4 avec 12 dégâts (attaque : 8 + jet de dé: 4)
+[2023-12-03 23:52:13] Ennemi 4: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 23:52:13] Ennemi 2 attaque  3 avec 13 dégâts (attaque : 8 + jet de dé: 5)
+[2023-12-03 23:52:13] 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡] 14/20hp
+[2023-12-03 23:52:13] Ennemi 3 attaque  4 avec 12 dégâts (attaque : 8 + jet de dé: 4)
+[2023-12-03 23:52:13] 4: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 23:52:13] 2 attaque  Ennemi 4 avec 11 dégâts (attaque : 8 + jet de dé: 3)
+[2023-12-03 23:52:13] Ennemi 4: [♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡] 8/20hp
+[2023-12-03 23:52:13] Ennemi 1 attaque  1 avec 9 dégâts (attaque : 8 + jet de dé: 1)
+[2023-12-03 23:52:13] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡] 18/20hp
+[2023-12-03 23:52:13] Ennemi 4 attaque  3 avec 12 dégâts (attaque : 8 + jet de dé: 4)
+[2023-12-03 23:52:13] 3: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 23:52:14] 3 attaque  Ennemi 3 avec 12 dégâts (attaque : 8 + jet de dé: 4)
+[2023-12-03 23:52:14] Ennemi 3: [♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡] 15/20hp
+[2023-12-03 23:52:14] 1 attaque  Ennemi 2 avec 14 dégâts (attaque : 8 + jet de dé: 6)
+[2023-12-03 23:52:14] Ennemi 2: [♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 6/20hp
+[2023-12-03 23:52:14] 4 attaque  Ennemi 4 avec 14 dégâts (attaque : 8 + jet de dé: 6)
+[2023-12-03 23:52:14] Ennemi 4: [♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 3/20hp
+[2023-12-03 23:52:14] Ennemi 2 attaque  1 avec 10 dégâts (attaque : 8 + jet de dé: 2)
+[2023-12-03 23:52:14] 1: [♥♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡] 13/20hp
+[2023-12-03 23:52:14] Ennemi 3 attaque  2 avec 12 dégâts (attaque : 8 + jet de dé: 4)
+[2023-12-03 23:52:14] 2: [♥♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡] 12/20hp
+[2023-12-03 23:52:14] 2 attaque  Ennemi 2 avec 10 dégâts (attaque : 8 + jet de dé: 2)
+[2023-12-03 23:52:14] Ennemi 2: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 23:52:14] Ennemi 1 attaque  1 avec 14 dégâts (attaque : 8 + jet de dé: 6)
+[2023-12-03 23:52:14] 1: [♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 3/20hp
+[2023-12-03 23:52:14] Ennemi 4 attaque  4 avec 12 dégâts (attaque : 8 + jet de dé: 4)
+[2023-12-03 23:52:14] 4: [♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡] 10/20hp
+[2023-12-03 23:52:14] 3 attaque  Ennemi 2 avec 11 dégâts (attaque : 8 + jet de dé: 3)
+[2023-12-03 23:52:14] Ennemi 2: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 23:52:14] 1 attaque  Ennemi 1 avec 11 dégâts (attaque : 8 + jet de dé: 3)
+[2023-12-03 23:52:14] Ennemi 1: [♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡] 11/20hp
+[2023-12-03 23:52:14] 4 attaque  Ennemi 4 avec 13 dégâts (attaque : 8 + jet de dé: 5)
+[2023-12-03 23:52:14] Ennemi 4: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 23:52:14] Ennemi 3 attaque  4 avec 9 dégâts (attaque : 8 + jet de dé: 1)
+[2023-12-03 23:52:14] 4: [♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 5/20hp
+[2023-12-03 23:52:14] 2 attaque  Ennemi 3 avec 10 dégâts (attaque : 8 + jet de dé: 2)
+[2023-12-03 23:52:14] Ennemi 3: [♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡] 9/20hp
+[2023-12-03 23:52:14] Ennemi 1 attaque  2 avec 10 dégâts (attaque : 8 + jet de dé: 2)
+[2023-12-03 23:52:14] 2: [♥♥♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡] 11/20hp
+[2023-12-03 23:52:14] 3 attaque  Ennemi 3 avec 11 dégâts (attaque : 8 + jet de dé: 3)
+[2023-12-03 23:52:14] Ennemi 3: [♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡] 7/20hp
+[2023-12-03 23:52:14] 1 attaque  Ennemi 3 avec 13 dégâts (attaque : 8 + jet de dé: 5)
+[2023-12-03 23:52:14] Ennemi 3: [♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 2/20hp
+[2023-12-03 23:52:14] 4 attaque  Ennemi 3 avec 14 dégâts (attaque : 8 + jet de dé: 6)
+[2023-12-03 23:52:14] Ennemi 3: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp
+[2023-12-03 23:52:14] 2 attaque  Ennemi 1 avec 11 dégâts (attaque : 8 + jet de dé: 3)
+[2023-12-03 23:52:14] Ennemi 1: [♥♥♥♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡] 9/20hp
+[2023-12-03 23:52:14] Ennemi 1 attaque  3 avec 11 dégâts (attaque : 8 + jet de dé: 3)
+[2023-12-03 23:52:14] 3: [♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 6/20hp
+[2023-12-03 23:52:15] 3 attaque  Ennemi 1 avec 10 dégâts (attaque : 8 + jet de dé: 2)
+[2023-12-03 23:52:15] Ennemi 1: [♥♥♥♥♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 6/20hp
+[2023-12-03 23:52:15] 1 attaque  Ennemi 1 avec 9 dégâts (attaque : 8 + jet de dé: 1)
+[2023-12-03 23:52:15] Ennemi 1: [♥♥♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 2/20hp
+[2023-12-03 23:52:15] 4 attaque  Ennemi 1 avec 9 dégâts (attaque : 8 + jet de dé: 1)
+[2023-12-03 23:52:15] Ennemi 1: [♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡] 0/20hp

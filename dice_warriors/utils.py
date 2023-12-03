@@ -1,2 +1,2 @@
 def press_enter_to_continue():
-    input("Press Enter to continue...")
+    input("Appuiez sur Entrée pour continuer...")

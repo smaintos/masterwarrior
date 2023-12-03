@@ -1,15 +1,31 @@
+from rich.console import Console
+from rich.theme import Theme
 from character import Warrior, Mage, Thief, Knight, Character
 import random
+
+# Définir un thème avec des couleurs spécifiques
+custom_theme = Theme({
+    "info": "cyan",
+    "success": "green",
+    "warning": "yellow",
+    "error": "bold red",
+})
+
+console = Console(theme=custom_theme)
+
+def center_text(text, width):
+    padding = " " * ((width - len(text)) // 2)
+    return f"{padding}{text}"
 
 def teamplayer():
     team_player = []
     for i in range(4):
-        name = input(f"Entrez le nom pour le personnage {i + 1} : ")
-        print("\nChoisissez la classe pour le personnage :")
-        print("1. Guerrier (Costaud, +3 attaque)")
-        print("2. Mage (Défensif, +3 défense)")
-        print("3. Voleur (Agile, ignore la défense)")
-        print("4. Chevalier (Équilibré, +2 vitesse)")
+        name = input(f"Entrez le nom pour le personnage {i + 1} : ") 
+        console.print(center_text("\nChoisissez la classe pour le personnage :", console.width), style="info")
+        console.print(center_text("1. Guerrier (Costaud, +3 attaque)", console.width), style="info")
+        console.print(center_text("2. Mage (Défensif, +3 défense)", console.width), style="info")
+        console.print(center_text("3. Voleur (Agile, ignore la défense)", console.width), style="info")
+        console.print(center_text("4. Chevalier (Équilibré, +2 vitesse)", console.width), style="info")
         choice = input("Entrez le numéro de votre choix : ")
 
         # Utilisation de la classe correcte en fonction du choix
@@ -22,7 +38,7 @@ def teamplayer():
         elif choice == "4":
             character = Knight(name)
         else:
-            print("Choix invalide. Par défaut, Guerrier.")
+            console.print("Choix invalide. Par défaut, Guerrier.", style="error")
             character = Warrior(name)
 
         character.regenerate()  # Régénère les HP
@@ -43,11 +59,11 @@ def teamenemy():
         # Demandez au joueur s'il souhaite choisir la classe de l'ennemi
         choice = input(f"Voulez-vous choisir la classe pour {name} ? (o/n) : ")
         if choice.lower() == 'o':
-            print("\nChoisissez la classe pour le personnage :")
-            print("1. Guerrier (Costaud, +3 attaque)")
-            print("2. Mage (Défensif, +3 défense)")
-            print("3. Voleur (Agile, ignore la défense)")
-            print("4. Chevalier (Équilibré, +2 vitesse)")
+            console.print(center_text("\nChoisissez la classe pour le personnage :", console.width), style="info")
+            console.print(center_text("1. Guerrier (Costaud, +3 attaque)", console.width), style="info")
+            console.print(center_text("2. Mage (Défensif, +3 défense)", console.width), style="info")
+            console.print(center_text("3. Voleur (Agile, ignore la défense)", console.width), style="info")
+            console.print(center_text("4. Chevalier (Équilibré, +2 vitesse)", console.width), style="info")
             class_choice = input("Entrez le numéro de votre choix : ")
 
             # Utilisation de la classe correcte en fonction du choix
@@ -60,7 +76,7 @@ def teamenemy():
             elif class_choice == "4":
                 team_enemy.append(Knight(name))
             else:
-                print("Choix invalide. Par défaut, Guerrier.")
+                console.print("Choix invalide. Par défaut, Guerrier.", style="error")
                 team_enemy.append(Warrior(name))
         else:
             team_enemy.append(random.choice([Warrior(name), Mage(name), Thief(name), Knight(name)]))

@@ -1,8 +1,18 @@
-# charactere.py
 from __future__ import annotations
+from rich.console import Console
+from rich.theme import Theme
 from datetime import datetime
 from dice import Dice
 
+# Définir un thème avec des couleurs spécifiques
+custom_theme = Theme({
+    "info": "cyan",
+    "success": "green",
+    "warning": "yellow",
+    "error": "bold red",
+})
+
+console = Console(theme=custom_theme)
 
 class MessageManager:
     def __init__(self, log_file="game_logs.txt"):
@@ -12,7 +22,6 @@ class MessageManager:
         with open(self.log_file, "a", encoding="utf-8") as file:
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             file.write(f"[{current_time}] {message}\n")
-
 
 class Character:
     message_manager = MessageManager()
@@ -28,10 +37,10 @@ class Character:
         self.message_manager = Character.message_manager
 
     def __str__(self):
-        return f"{self._name} the Character enters the arena with:\n" \
-               f"■ attack: {self._attack_value}\n" \
-               f"■ defense: {self._defense_value}\n" \
-               f"■ speed: {self._speed}"
+        return f"{self._name} le personnage entre dans l'arène avec:\n" \
+               f"■ attaque : {self._attack_value}\n" \
+               f"■ défense : {self._defense_value}\n" \
+               f"■ vitesse : {self._speed}" if hasattr(self, '_name') else ""
 
     def get_defense_value(self):
         return self._defense_value
@@ -49,12 +58,12 @@ class Character:
         missing_hp = max(0, self._max_hp - self._current_hp)
         healthbar = f"[{'♥' * self._current_hp}{'♡' * missing_hp}] {self._current_hp}/{self._max_hp}hp"
         message = f"{self._name}: {healthbar}"
-        print(message)
+        console.print(message, style="info", justify="center")
         self.message_manager.log_message(message)
 
     def show_enemy_info(self):
         healthbar = f"[{'♥' * self._current_hp}{'♡' * max(0, self._max_hp - self._current_hp)}] {self._current_hp}/{self._max_hp}hp"
-        print(f"{self._name}: {healthbar}")
+        console.print(f"{self._name}: {healthbar}", style="info", justify="center")
 
     def regenerate(self):
         self._current_hp = self._max_hp
@@ -71,53 +80,56 @@ class Character:
     def attack(self, target: Character):
         if not self.is_alive():
             return
-        roll = self._dice.roll()
-        damages = self.compute_damages(roll, target)
-        message = f"{self._name} attacks {target.get_name()} with {damages} damages (attack: {self._attack_value} + roll: {roll})"
+        attack_roll = self._dice.roll()
+        defense_roll = target._dice.roll()
+
+        damages = self.compute_damages(attack_roll, target)
+        message = f"{self._name} attaque  {target.get_name()} avec {damages} dégâts (attaque : {self._attack_value} + jet de dé: {attack_roll})"
         print(f"⚔️ {message}")
         self.message_manager.log_message(message)
-        target.defense(damages, roll, self)
+        target.defense(damages, defense_roll, self)
 
     def compute_defense(self, damages, roll, attacker):
         return max(0, damages - self._defense_value - roll)
 
     def defense(self, damages, roll, attacker: Character):
-        wounds = self.compute_defense(damages, roll, attacker)
-        print(f"🛡️ {self._name} takes {wounds} wounds from {attacker.get_name()} (damages: {damages} - defense: {self._defense_value} - roll: {roll})")
+        defense_roll = self._dice.roll()
+        wounds = self.compute_defense(damages, defense_roll, attacker)
+        print(f"🛡️ {self._name} subit {wounds} de blessures de {attacker.get_name()} (dégâts : {damages} - défense : {self._defense_value} - jet de dé : {defense_roll})")
         self.decrease_health(wounds)
-
 
 class Warrior(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
     def compute_bonus_attack(self, target: Character):
-        print("🪓 Bonus: Axe in your face (+3 attack)")
+        bonus_message = "🪓 Bonus: Hache dans ta tronche ! (+3 attack)"
+        console.print(bonus_message, style="success", justify="center")
         return 3
-
 
 class Mage(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
     def compute_bonus_attack(self, target: Character):
-        print("🧙 Bonus: Magic armor (-3 damages)")
+        bonus_message = "🧙 Bonus: Armure magique ! (-3 damages)"
+        console.print(bonus_message, style="warning", justify="center")
         return -3
-
 
 class Thief(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=0, dice=Dice(6))
 
     def compute_bonus_attack(self, target: Character):
-        print(f"🔪 Bonus: Sneaky attack (+{target.get_defense_value()} damages)")
+        bonus_message = f"🔪 Bonus: Attaque furtif ! (+{target.get_defense_value()} dégâts)"
+        console.print(bonus_message, style="success", justify="center")
         return target.get_defense_value()
-
 
 class Knight(Character):
     def __init__(self, name: str):
         super().__init__(name, max_hp=20, attack=8, defense=3, speed=2, dice=Dice(6))
 
     def compute_bonus_attack(self, target: Character):
-        print("⚔️ Bonus: Charging attack (+2 attack)")
+        bonus_message = "⚔️ Bonus: Attaque charger ! (+2 attack)"
+        console.print(bonus_message, style="success", justify="center")
         return 2
