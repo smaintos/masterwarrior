@@ -84,7 +84,7 @@ class Character:
         defense_roll = target._dice.roll()
 
         damages = self.compute_damages(attack_roll, target)
-        message = f"{self._name} attaque  {target.get_name()} avec {damages} dégâts (attaque : {self._attack_value} + jet de dé: {attack_roll})"
+        message = f"{self._name} attaque {target.get_name()} avec {damages} dégâts (attaque : {self._attack_value} + jet de dé: {attack_roll})"
         print(f"⚔️ {message}")
         self.message_manager.log_message(message)
         target.defense(damages, defense_roll, self)
