@@ -1,6 +1,6 @@
+# charactere.py
 from __future__ import annotations
 from datetime import datetime
-
 from dice import Dice
 
 
@@ -12,7 +12,6 @@ class MessageManager:
         with open(self.log_file, "a", encoding="utf-8") as file:
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             file.write(f"[{current_time}] {message}\n")
-
 
 
 class Character:
@@ -29,10 +28,10 @@ class Character:
         self.message_manager = Character.message_manager
 
     def __str__(self):
-        return f"""{self._name} the Character enters the arena with:
-    ■ attack: {self._attack_value} 
-    ■ defense: {self._defense_value}
-    ■ speed: {self._speed}"""
+        return f"{self._name} the Character enters the arena with:\n" \
+               f"■ attack: {self._attack_value}\n" \
+               f"■ defense: {self._defense_value}\n" \
+               f"■ speed: {self._speed}"
 
     def get_defense_value(self):
         return self._defense_value
@@ -47,18 +46,18 @@ class Character:
         return self._current_hp > 0
 
     def show_healthbar(self):
-        missing_hp = self._max_hp - self._current_hp
+        missing_hp = max(0, self._max_hp - self._current_hp)
         healthbar = f"[{'♥' * self._current_hp}{'♡' * missing_hp}] {self._current_hp}/{self._max_hp}hp"
         message = f"{self._name}: {healthbar}"
         print(message)
         self.message_manager.log_message(message)
 
     def show_enemy_info(self):
-        healthbar = f"[{'♥' * self._current_hp}{'♡' * (self._max_hp - self._current_hp)}] {self._current_hp}/{self._max_hp}hp"
+        healthbar = f"[{'♥' * self._current_hp}{'♡' * max(0, self._max_hp - self._current_hp)}] {self._current_hp}/{self._max_hp}hp"
         print(f"{self._name}: {healthbar}")
-    
+
     def regenerate(self):
-        self._current_hp = min(self._max_hp, 20)
+        self._current_hp = self._max_hp
 
     def decrease_health(self, amount):
         self._current_hp -= amount
@@ -80,14 +79,12 @@ class Character:
         target.defense(damages, roll, self)
 
     def compute_defense(self, damages, roll, attacker):
-        return damages - self._defense_value - roll
+        return max(0, damages - self._defense_value - roll)
 
     def defense(self, damages, roll, attacker: Character):
         wounds = self.compute_defense(damages, roll, attacker)
         print(f"🛡️ {self._name} takes {wounds} wounds from {attacker.get_name()} (damages: {damages} - defense: {self._defense_value} - roll: {roll})")
         self.decrease_health(wounds)
-    
-    
 
 
 class Warrior(Character):
@@ -124,18 +121,3 @@ class Knight(Character):
     def compute_bonus_attack(self, target: Character):
         print("⚔️ Bonus: Charging attack (+2 attack)")
         return 2
-    
-def compute_damages(self, roll: int, target: Character) -> int:
-    base_damages = self.get_attack_value() + roll
-    if target is not None:
-        print(f"💥 {self.get_name()} attacks {target.get_name()}!")
-
-        if isinstance(target, Thief):
-            print("🔪 Bonus: Sneaky attack (+3 damages)")
-            return base_damages + 3
-        else:
-            print("💢 Standard attack")
-            return base_damages
-    else:
-        print(f"💨 {self.get_name()} attacks but misses! No target selected.")
-        return 0
